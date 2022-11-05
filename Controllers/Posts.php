@@ -35,7 +35,6 @@ class Posts extends Controllers
    */
   public function delete(){
     if (ctype_digit($_GET['post_id'])){
-      echo "<script type='text/javascript' >alert('Are you sure you want to delete this post?')</script>";
       $post = new Post();
       $post->deletePost();
     }
