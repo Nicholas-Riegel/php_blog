@@ -10,7 +10,8 @@ class Database{
     $dbname = 'railway';
     $user = 'root';
     $pword = 'xbGPoYyhG4EtgOzPSVDL';
-    $dsn = 'mysql:host='.$host.';dbname='.$dbname ;
+    $dsn = 'mysql:host='.$host. ';port=7912;dbname='.$dbname ;
+    // $dsn = 'mysql://root:xbGPoYyhG4EtgOzPSVDL@containers-us-west-69.railway.app:7912/railway';
 
     try {
       $this->pdo = new PDO($dsn, $user, $pword);
