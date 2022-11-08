@@ -30,7 +30,7 @@
   <?php else : ?>
 
     <a href="/pages/register" style='margin-left: 10px;float: right'>Register</a>
-    <a href="https://phpblog-production-3d4b.up.railway.appx/pages/login" style='margin-left: 10px; float: right'>Log In</a>
+    <a href="pages/login" style='margin-left: 10px; float: right'>Log In</a>
 
   <?php endif ?>
 
