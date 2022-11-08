@@ -13,7 +13,7 @@ class Core
     $uri_string = trim($cleaned_uri, '/');
     $uri_array = array_slice(explode('/', $uri_string), 0, 2);
     
-    die(print_r($uri_array));
+    print_r($uri_array);
 
     // Check first subdirectory
     if (!empty($uri_array[0]) && file_exists('./Controllers/' . ucwords($uri_array[0]) . '.php')) {
