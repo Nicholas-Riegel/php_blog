@@ -6,10 +6,10 @@ class Database{
   
   public function __construct()
   {
-    $host = 'localhost';
-    $dbname = 'sessionsOOP';
+    $host = 'containers-us-west-69.railway.app';
+    $dbname = 'railway';
     $user = 'root';
-    $pword = 'Knowthyself';
+    $pword = 'xbGPoYyhG4EtgOzPSVDL';
     $dsn = 'mysql:host='.$host.';dbname='.$dbname ;
 
     try {

@@ -1,7 +1,8 @@
 <?php
 
-$session_username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
-require './views/includes/header.php';
+  $session_username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
+
+  require './views/includes/header.php';
 
 ?>
 
