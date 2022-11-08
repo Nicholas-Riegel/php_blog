@@ -14,14 +14,14 @@ class Core
     $uri_array = array_slice(explode('/', $uri_string), 0, 2);
     
     // Check first subdirectory
-    if (!empty($uri_array[1]) && file_exists('./Controllers/' . ucwords($uri_array[1]) . '.php')) {
+    if (!empty($uri_array[0]) && file_exists('./Controllers/' . ucwords($uri_array[0]) . '.php')) {
       
-      $this->controller = ucwords($uri_array[1]);
+      $this->controller = ucwords($uri_array[0]);
 
       // Check second subdirectory
-      if (!empty($uri_array[2]) && method_exists($this->controller, strtolower($uri_array[2]))) {
+      if (!empty($uri_array[1]) && method_exists($this->controller, strtolower($uri_array[1]))) {
       
-        $this->controller_function = strtolower($uri_array[2]);
+        $this->controller_function = strtolower($uri_array[1]);
         
       }
     }
