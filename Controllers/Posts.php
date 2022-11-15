@@ -11,7 +11,7 @@ class Posts extends Controllers
     if (isset($_POST['submit_post'])){
       $post = new Post();
       $post->insertPost();
-      header('location: http://localhost:8080');
+      header('location:' . URL_ROOT);
     }
   }
   
@@ -24,7 +24,7 @@ class Posts extends Controllers
     if (isset($_POST['update_post'])){
       $post = new Post();
       $post->updatePost();
-      header('location: http://localhost:8080');
+      header('location:' . URL_ROOT);
     }
   }
 
@@ -38,6 +38,6 @@ class Posts extends Controllers
       $post = new Post();
       $post->deletePost();
     }
-    header('location: http://localhost:8080');
+    header('location:' . URL_ROOT);
   }
 }

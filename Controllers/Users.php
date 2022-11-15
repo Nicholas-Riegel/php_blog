@@ -16,10 +16,10 @@ class Users extends Controllers
     ) {
       $newUser = new User();
       $newUser->insertNewUser();
-      header('location: http://localhost:8080/users/login');
+      header('location:' . URL_ROOT . '/users/login');
     } else {
       unset($_POST);
-      header('location: http://localhost:8080/pages/register');
+      header('location:' . URL_ROOT . 'pages/register');
     }
   }
 
@@ -40,10 +40,10 @@ class Users extends Controllers
         $_SESSION['username'] = htmlspecialchars($_POST['username']);
         $_SESSION['id'] = htmlspecialchars($row['id']);
         unset($_POST);
-        header('location: http://localhost:8080');
+        header('location:' . URL_ROOT);
       } else {
         unset($_POST);
-        header('location: http://localhost:8080/pages/login');
+        header('location:' . URL_ROOT . '/pages/login');
       }
     }
   }

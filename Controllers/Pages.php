@@ -41,7 +41,7 @@ class Pages extends Controllers
     if (!empty($_SESSION['username'])){
       require './views/create.php';
     } else {
-      header('location: http://localhost:8080');
+      header('location:' . URL_ROOT);
     }
   }
 
@@ -56,7 +56,7 @@ class Pages extends Controllers
     if ($post){
       $this->requireWithData('./views/edit.php', ['post' => $post]);
     } else {
-      header('location: http://localhost:8080');
+      header('location:'. URL_ROOT);
     }
   }
 
@@ -67,6 +67,6 @@ class Pages extends Controllers
    */
   public function logout(){
     session_destroy();
-    header('location: http://localhost:8080');
+    header('location:' . URL_ROOT);
   }
 }
