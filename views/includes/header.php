@@ -16,7 +16,7 @@
       background-color: gray;
     }
   </style>
-  <title>Document</title>
+  <title>PHP Blog</title>
 </head>
 
 <body>
