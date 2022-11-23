@@ -15,11 +15,19 @@ class Users extends Controllers
       && !empty($_POST['password'])
     ) {
       $newUser = new User();
-      $newUser->insertNewUser();
-      header('location:' . URL_ROOT . '/users/login');
+      $row = $newUser->findUser();
+      if (!$row) {
+        // $newUser = new User();
+        $newUser->insertNewUser();
+        header('location:' . URL_ROOT . '/pages/login');
+      } else {
+        // more should be done here to indicate that username is already taken
+        unset($_POST);
+        header('location:' . URL_ROOT . '/pages/register');
+      }
     } else {
       unset($_POST);
-      header('location:' . URL_ROOT . 'pages/register');
+      header('location:' . URL_ROOT . '/pages/register');
     }
   }
 
