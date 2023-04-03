@@ -8,14 +8,13 @@ class Database{
   {
     $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
-    var_dump($url);
+    // var_dump($url);
     
-    $host = $url["host"];
+    $host     = $url["host"];
     $username = $url["user"];
     $password = $url["pass"];
-    $db = substr($url["path"], 1);
-
-    $dsn    = 'mysql:host='.$host.';dbname='.$db ;
+    $dbname   = substr($url["path"], 1);
+    $dsn      = 'mysql:host='.$host.';dbname='.$dbname ;
 
     try {
       $this->pdo = new PDO($dsn, $username, $password);
