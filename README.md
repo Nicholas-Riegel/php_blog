@@ -17,3 +17,5 @@ The goal is to make a crud application that exemplifies
 with as little code as possible.
 
 The SQL queries for making the tables are in the db.sql file
+
+The project may be viewed at https://php-sessions-oop.herokuapp.com/

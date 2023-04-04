@@ -14,7 +14,7 @@
 
 <body>
 
-  <h2 style='margin: auto; text-align: center;'>SESSIONS OOP</h2>
+  <h2 style='margin: auto; text-align: center;'>PHP BLOG LEARNING / TEACHING TOOL</h2>
 
   <?php if (!empty($_SESSION['username'])) : ?>
 
