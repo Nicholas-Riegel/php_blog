@@ -16,7 +16,8 @@
 
   <h2 style='margin: auto; text-align: center;'>PHP BLOG LEARNING / TEACHING TOOL</h2>
   <p style='margin: auto; text-align: center;'>Project deliberately left unstyled.</p>
-<p style='margin: auto; text-align: center;'>See <a href="https://github.com/Nicholas-Riegel/php_blog">README file on the GitHub repository</a>.</p>
+  <p style='margin: auto; text-align: center;'>See <a href="https://github.com/Nicholas-Riegel/php_blog">README file on the GitHub repository</a>.</p>
+  <p style='margin: auto; text-align: center;'>Feel free to register, login and create a post!</p>
   <?php if (!empty($_SESSION['username'])) : ?>
 
     <a href="/pages/logout" style="float: right; margin-left: 10px;">Log out</a>
