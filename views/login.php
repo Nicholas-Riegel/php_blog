@@ -2,7 +2,7 @@
   require './views/includes/header.php';
 ?>
 
-<h1>Login Page</h1>
+<h1 style='margin: auto; text-align: center;'>Login Page</h1>
 
 <form action="/users/login" method="POST">
 

@@ -2,7 +2,7 @@
 require './views/includes/header.php';
 ?>
 
-<h1>Edit Post</h1>
+<h1 style='margin: auto; text-align: center;'>Edit Post</h1>
 
 <form action="/posts/update" method="post">
 

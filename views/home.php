@@ -6,7 +6,7 @@
 
 ?>
 
-<h1>Home page</h1>
+<h1 style='margin: auto; text-align: center;'>Home page</h1>
 
 <?php foreach ($data as $post) : ?>
   

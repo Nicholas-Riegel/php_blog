@@ -1,6 +1,6 @@
 <?php require './views/includes/header.php'; ?>
 
-<h1>Register Page</h1>
+<h1 style='margin: auto; text-align: center;'>Register Page</h1>
 
 <form action="/users/register" method="POST">
 

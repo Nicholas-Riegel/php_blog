@@ -2,7 +2,7 @@
 require './views/includes/header.php';
 ?>
 
-<h1>Create Post</h1>
+<h1 style='margin: auto; text-align: center;'>Create Post</h1>
 
 <form action="/posts/submit" method="post">
 
