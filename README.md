@@ -2,14 +2,14 @@
 
 This project is deliberately unstyled.
 
-I feel that many of the Object Oriented PHP tutorials online are overly complex and spend far too much time on CSS and styling. 
+I felt that many Object Oriented PHP tutorials are overly complex and spend too much time on CSS and styling. 
 
 This project was created to focus more on the code than the UI.
 
 The goal is to make a crud application that exemplifies
 * Object Oriented PHP
 * Sessions
-* Authentification
+* Authentication
 * MVC
 * CRUD
 * SQL Database
