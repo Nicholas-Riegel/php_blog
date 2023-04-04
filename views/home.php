@@ -7,7 +7,8 @@
 ?>
 
 <h1 style='margin: auto; text-align: center;'>Home page</h1>
-
+<p>Project deliberately left unstyled.</p>
+<p>See <a href="https://github.com/Nicholas-Riegel/php_blog">README file on the GitHub repository</a>.</p>
 <?php foreach ($data as $post) : ?>
   
   <h4><?= $post['username'] ?></h4>
