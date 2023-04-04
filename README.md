@@ -6,7 +6,7 @@ I felt that many Object Oriented PHP tutorials are overly complex and spend too 
 
 This project was created to focus more on the code than the UI.
 
-The goal is to make a crud application that exemplifies
+The goal is to make an learning application that exemplifies
 * Object Oriented PHP
 * Sessions
 * Authentication

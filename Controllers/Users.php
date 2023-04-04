@@ -17,7 +17,6 @@ class Users extends Controllers
       $newUser = new User();
       $row = $newUser->findUser();
       if (!$row) {
-        // $newUser = new User();
         $newUser->insertNewUser();
         header('location:' . URL_ROOT . '/pages/login');
       } else {
