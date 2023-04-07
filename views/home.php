@@ -7,7 +7,7 @@
 ?>
 
 <h1 style='margin: auto; text-align: center;'>Home page</h1>
-<p style='margin: auto; text-align: center;'>Project deliberately left unstyled.</p>
+<p style='margin: auto; text-align: center;'>Project only has minimal styling at the moment, but it is fully functional.</p>
 <p style='margin: auto; text-align: center;'>See <a href="https://github.com/Nicholas-Riegel/php_blog">README file on the GitHub repository</a>.</p>
 <p style='margin: auto; text-align: center;'>Feel free to register, login and create a post!</p>
 
