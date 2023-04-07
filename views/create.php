@@ -1,6 +1,4 @@
-<?php
-require './views/includes/header.php';
-?>
+<?php require './views/includes/header.php';?>
 
 <h1 style='margin: auto; text-align: center;'>Create Post</h1>
 
@@ -13,6 +11,7 @@ require './views/includes/header.php';
   <button name='submit_post' value=1>Submit</button>
 
 </form>
+
 <a href="/"><button>Cancel</button></a>
 
 <?php require './views/includes/footer.php'; ?>

@@ -1,6 +1,4 @@
-<?php
-  require './views/includes/header.php';
-?>
+<?php require './views/includes/header.php';?>
 
 <h1 style='margin: auto; text-align: center;'>Login Page</h1>
 

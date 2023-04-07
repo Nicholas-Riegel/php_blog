@@ -1,10 +1,6 @@
 # PHP BLOG LEARNING / TEACHING TOOL
 
-This project is deliberately unstyled.
-
-I felt that many Object Oriented PHP tutorials are overly complex and spend too much time on CSS and styling. 
-
-This project was created to focus more on the code than the UI.
+This project only has minimal styling at the moment.
 
 The goal is to make an learning application that exemplifies
 * Object Oriented PHP

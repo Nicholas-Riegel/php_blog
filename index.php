@@ -12,7 +12,10 @@ require './Controllers/Users.php';
 require './Controllers/Posts.php';
 require './Libraries/Core.php';
 
-// I am deliberately not using an autoloader here in order to make things as clear as possible
+/**  
+* an autoloader woul normally be used here 
+* but i wanted to leave the files explicit
+*/
 
 session_start();
 

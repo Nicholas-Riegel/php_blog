@@ -4,7 +4,7 @@ class Core
 {
 
   private $controller = 'Pages';
-  private $controller_function = 'index';
+  private $controller_method = 'index';
 
   public function __construct()
   {
@@ -21,7 +21,7 @@ class Core
       // Check second subdirectory
       if (!empty($uri_array[1]) && method_exists($this->controller, strtolower($uri_array[1]))) {
       
-        $this->controller_function = strtolower($uri_array[1]);
+        $this->controller_method = strtolower($uri_array[1]);
         
       }
     }
@@ -30,6 +30,6 @@ class Core
     $active_controller = new $this->controller();
 
     // Activate method and view
-    $active_controller->{$this->controller_function}();
+    $active_controller->{$this->controller_method}();
   }
 }
