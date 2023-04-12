@@ -13,10 +13,11 @@ require './Controllers/Posts.php';
 require './Libraries/Core.php';
 
 /**  
-* an autoloader woul normally be used here 
+* an autoloader would normally be used here 
 * but i wanted to leave the files explicit
 */
 
 session_start();
 
+// To follow the logic, start at ./Libraries/Core.php
 new Core();
