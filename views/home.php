@@ -16,8 +16,10 @@
     <p class="border rounded ps-1 pe-1"><?= $post['body'] ?></p>
     
     <?php if ($post['username'] == $session_username) : ?>
-      <a href='/pages/edit/?post_id=<?= $post['post_id'] ?>'>Edit</a>
-      <a onClick="return confirm('Are you sure you want to delete this?')" href='/posts/delete/?post_id=<?= $post['post_id'] ?>' >Delete</a>
+      <div class="d-flex justify-content-end">
+        <a href='/pages/edit/?post_id=<?= $post['post_id'] ?>' class="btn btn-md btn-outline-info">Edit</a>
+        <a onClick="return confirm('Are you sure you want to delete this?')" href='/posts/delete/?post_id=<?= $post['post_id'] ?>' class="btn btn-md btn-outline-info ms-2">Delete</a>
+      </div>
     <?php endif ?>
       
   </div>

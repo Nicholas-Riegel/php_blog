@@ -12,7 +12,7 @@
     <br>
     <input type="text" name="password" id='password' class="border rounded ps-1 pe-1 w-100">
     <br>
-    <div class="d-flex">
+    <div class="d-flex mt-2">
       <button name='submit_registration' value=1 class='btn btn-md btn-outline-info ms-auto'>Submit</button>
     </div>
   </form>

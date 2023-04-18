@@ -2,16 +2,19 @@
 
 <h1 style='margin: auto; text-align: center;'>Edit Post</h1>
 
-<form action="/posts/update" method="post">
+<div class="container card p-3 mb-3">
 
-  <label for="body">Post:</label>
-  <br>
-  <textarea name="body" id="body" cols="30" rows="10"><?= $data['post']['body'] ?></textarea>
-  <br>
-  <button name='update_post' value=<?= $data['post']['id'] ?>>Submit</button>
+  <form action="/posts/update" method="post">
 
-</form>
+    <label for="body">Post:</label>
+    <br>
+    <textarea name="body" id="body" rows="7" class="w-100"><?= $data['post']['body'] ?></textarea>
+    <br>
+    <div class="d-flex justify-content-end">
+      <button name='update_post' value=<?= $data['post']['id'] ?> class="btn btn-md btn-outline-info">Submit</button>
+      <a href="/" class="btn btn-md btn-outline-info ms-2">Cancel</a>
+    </div>
+  </form>
 
-<a href="/"><button>Cancel</button></a>
-
+</div>
 <?php require './views/includes/footer.php'; ?>
