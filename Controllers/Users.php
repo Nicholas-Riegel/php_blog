@@ -20,16 +20,15 @@ class Users extends Controllers
         $newUser->insertNewUser();
         header('location:' . URL_ROOT . '/pages/login');
       } else {
-        // more should be done here to indicate that username is already taken
         unset($_POST);
-        header('location:' . URL_ROOT . '/pages/register');
+        $this->requireWithData('./views/register.php', ['message' => 'Sorry. This username has already been taken']);
       }
     } else {
       unset($_POST);
       header('location:' . URL_ROOT . '/pages/register');
     }
   }
-
+  
   /**
    * Login user.
    *
@@ -40,18 +39,20 @@ class Users extends Controllers
       isset($_POST['submit_login'])
       && !empty($_POST['username'])
       && !empty($_POST['password'])
-    ) {
-      $user = new User();
-      $row = $user->findUser();
-      if ($row && $row['password'] == htmlspecialchars($_POST['password'])) {
-        $_SESSION['username'] = htmlspecialchars($_POST['username']);
-        $_SESSION['id'] = htmlspecialchars($row['id']);
-        unset($_POST);
-        header('location:' . URL_ROOT);
+      ) {
+        $user = new User();
+        $row = $user->findUser();
+        if ($row && $row['password'] == htmlspecialchars($_POST['password'])) {
+          $_SESSION['username'] = htmlspecialchars($_POST['username']);
+          $_SESSION['id'] = htmlspecialchars($row['id']);
+          unset($_POST);
+          header('location:' . URL_ROOT);
+        } else {
+          unset($_POST);
+          $this->requireWithData('./views/login.php', ['message' => 'Username or Password invalid.']);
+        }
       } else {
-        unset($_POST);
         header('location:' . URL_ROOT . '/pages/login');
       }
     }
   }
-}

@@ -6,6 +6,9 @@
 
 ?>
 
+<h1 style='text-align: center; text-decoration: none;' class="display-6 text-info">Posts</h1>
+
+<div class="mt-4">
 
 <?php foreach ($data as $post) : ?>
   <div class="container card p-3 mb-3">
@@ -25,4 +28,5 @@
   </div>
 <?php endforeach ?>
 
+</div>
 <?php require './views/includes/footer.php'; ?>

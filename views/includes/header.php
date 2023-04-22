@@ -19,7 +19,7 @@
 
 <body>
   
-  <nav class="navbar fixed-top bg-secondary">
+  <nav class="navbar fixed-top bg-secondary bg-opacity-75">
     
     <div class="container d-flex">
 
