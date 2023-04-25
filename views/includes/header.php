@@ -19,32 +19,32 @@
 
 <body>
   
-  <nav class="navbar fixed-top bg-secondary bg-opacity-75">
+  <nav class="navbar fixed-top">
     
     <div class="container d-flex">
 
       <!-- Home link  -->
       <a href="/pages/index" class="text-decoration-none">
-        <h1 class="display-6 text-info">Home</h1>
+        <h2 class="display-6 text-info">Home</h2>
       </a>
       
       <!-- Create Post link  -->
       <?php if (!empty($_SESSION['username'])) : ?>
       
         <a href="/pages/create" class="text-decoration-none">
-          <h1 class="display-6 text-info ms-4">Create Post</h1>
+          <h2 class="display-6 text-info ms-4">Create Post</h2>
         </a>
       
       <?php endif ?>
       
       <!-- User Name  -->
-      <h4 class="display-6 text-info ms-auto"><?= !empty($_SESSION['username']) ? $_SESSION['username'] : 'Guest' ?></h4>
+      <h3 class="display-6 text-info ms-auto"><?= !empty($_SESSION['username']) ? $_SESSION['username'] : 'Guest' ?></h3>
       
       <?php if (!empty($_SESSION['username'])) : ?>
         
         <!-- Logout link  -->
         <a href="/pages/logout" class="text-decoration-none ms-4">
-          <h1 class="display-6 text-info">Logout</h1>
+          <h2 class="display-6 text-info">Logout</h2>
         </a>
         
       <?php else : ?>
@@ -52,12 +52,12 @@
         <!-- Log in link  -->
 
         <a href="/pages/login" class="text-decoration-none ms-4">
-          <h1 class="display-6 text-info">Login</h1>  
+          <h2 class="display-6 text-info">Login</h2>  
         </a>
         
         <!-- Register link  -->
         <a href="/pages/register" class="text-decoration-none ms-4">
-          <h1 class="display-6 text-info">Register</h1>
+          <h2 class="display-6 text-info">Register</h2>
         </a>
 
       <?php endif ?>

@@ -21,7 +21,7 @@ class Users extends Controllers
         header('location:' . URL_ROOT . '/pages/login');
       } else {
         unset($_POST);
-        $this->requireWithData('./views/register.php', ['message' => 'Sorry. This username has already been taken']);
+        $this->requireWithData('./views/register.php', ['message' => 'Sorry. This username has already been taken.']);
       }
     } else {
       unset($_POST);
@@ -51,8 +51,8 @@ class Users extends Controllers
           unset($_POST);
           $this->requireWithData('./views/login.php', ['message' => 'Username or Password invalid.']);
         }
-      } else {
-        header('location:' . URL_ROOT . '/pages/login');
-      }
+    } else {
+      header('location:' . URL_ROOT . '/pages/login');
     }
   }
+}

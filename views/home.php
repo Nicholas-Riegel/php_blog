@@ -6,7 +6,7 @@
 
 ?>
 
-<h1 style='text-align: center; text-decoration: none;' class="display-6 text-info">Posts</h1>
+<h1 style='text-align: center; text-decoration: none;' class="display-6 text-color">Posts</h1>
 
 <div class="mt-4">
 

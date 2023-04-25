@@ -1,24 +1,53 @@
+:root{
+  --transparent: rgba(49, 74, 195, 0.7);
+  --text-color: whitesmoke;
+}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: black dotted 1px; */
 }
 
-a {
-  margin: 0;
+a.btn:hover {
+  outline: var(--text-color), 1px, solid;
 }
 
 body{
-  background-color: rgb(158, 170, 177);
-  /* border: red solid 1px; */
+  background: url('../assets/blue_lights.jpg') no-repeat fixed center;
+  background-size: cover; 
+}
+
+nav{
+  background-color: var(--transparent);
+}
+
+input{
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--text-color);
+  border: var(--text-color), solid, 1px;
+}
+
+.text-color{
+  color: var(--text-color);
+}
+
+textarea{
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--text-color);
 }
 
 .card{
+  background-color: var(--transparent);
   box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.25);
   max-width: 50%;
+  color: var(--text-color);
 }
 
-h1:hover{
+h2:hover{
   text-decoration: underline;
+}
+
+button:hover{
+  outline: var(--text-color) 1px solid;
 }
