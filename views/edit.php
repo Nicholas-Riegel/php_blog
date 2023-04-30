@@ -9,7 +9,7 @@
 
     <label for="body">Post:</label>
     <br>
-    <textarea name="body" id="body" rows="7" class="w-100 border rounded p-2"><?= $data['post']['body'] ?></textarea>
+    <textarea name="body" id="body" rows="7" required minlength="1" maxlength="700" placeholder="700 character limit" class="w-100 border rounded p-2"><?= $data['post']['body'] ?></textarea>
     <br>
     <div class="d-flex justify-content-end">
       <button name='update_post' value=<?= $data['post']['id'] ?> class="btn btn-md btn-outline-info">Save</button>

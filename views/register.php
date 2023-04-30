@@ -13,12 +13,12 @@
       <p class="text-color mb-0"><?= $data['message']?></p>
     <?php endif ?>
 
-    <input type="text" name="username" id='username' required class="border rounded ps-1 pe-1 w-100">
+    <input type="text" name="username" id='username' required minlength="1" maxlength="30" placeholder="Only letters and numbers. 30 characters max." pattern="[a-zA-Z0-9]+" class="border rounded ps-1 pe-1 w-100">
     <br>
 
     <label for="password">Password:</label>
     <br>
-    <input type="text" name="password" id='password' required class="border rounded ps-1 pe-1 w-100">
+    <input type="text" name="password" id='password' required minlength="1" maxlength="30" placeholder="Only letters and numbers. 30 characters max." pattern="[a-zA-Z0-9]+" class="border rounded ps-1 pe-1 w-100">
     <br>
     
     <div class="d-flex mt-2">

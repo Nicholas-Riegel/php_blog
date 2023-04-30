@@ -6,6 +6,7 @@ The goal is to make an learning application that exemplifies
 * Object Oriented PHP
 * Sessions
 * Authentication
+* Validation
 * MVC
 * CRUD
 * SQL Database

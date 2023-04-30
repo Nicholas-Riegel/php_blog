@@ -9,7 +9,7 @@
 
     <label for="body">Post:</label>
     <br>
-    <textarea name="body" id="body" rows="7" class="p-2 w-100 border rounded"></textarea>
+    <textarea name="body" id="body" rows="7" required minlength="1" maxlength="700" placeholder="700 character limit" class="p-2 w-100 border rounded"></textarea>
     <br>
     <div class="d-flex justify-content-end">
       <button name='submit_post' value=1 class="btn btn-outline-info">Save</button>

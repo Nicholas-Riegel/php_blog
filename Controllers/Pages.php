@@ -9,6 +9,7 @@ class Pages extends Controllers
    * @return void
    */
   public function index(){    
+    // $_SESSION['username'] = 'Guest';
     $posts = new Post();
     $posts_array = $posts->getAllPosts();
     $this->requireWithData('./views/home.php', $posts_array);
