@@ -11,7 +11,7 @@
 <div class="mt-4">
 
 <?php foreach ($data as $post) : ?>
-  <div class="container card p-3 mb-3">
+  <div class="container card p-3 mb-3" title="Login to edit">
 
     <p class="mb-0">Author:</p>
     <h4 class="border rounded ps-1 pe-1"><?= $post['username'] ?></h4>

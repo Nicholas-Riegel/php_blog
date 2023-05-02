@@ -17,7 +17,7 @@
   
 </head>
 
-<body>
+<body >
   
   <nav class="navbar fixed-top">
     
@@ -38,7 +38,7 @@
       <?php endif ?>
       
       <!-- User Name  -->
-      <h3 class="display-6 text-info ms-auto"><?= !empty($_SESSION['username']) ? $_SESSION['username'] : 'Guest' ?></h3>
+      <h3 class="display-6 text-info ms-auto" title="You are signed in as..."><?= !empty($_SESSION['username']) ? $_SESSION['username'] : 'Guest' ?></h3>
       
       <?php if (!empty($_SESSION['username'])) : ?>
         
