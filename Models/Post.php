@@ -15,6 +15,9 @@ class Post
    * @return void
    */
   public function insertPost(){
+    if (strlen($_POST['body']) > 700){
+      $_POST['body'] = substr($_POST['body'], 0, 700) . '...';
+    }
     $pdo = $this->db->pdo;
     $query = 'INSERT INTO posts (user_id, body) VALUES (:user_idx, :bodyx);';
     $stmt = $pdo->prepare($query);
@@ -79,6 +82,9 @@ class Post
    * @return void
    */
   public function updatePost(){
+    if (strlen($_POST['body']) > 700){
+      $_POST['body'] = substr($_POST['body'], 0, 700) . '...';
+    }
     $pdo = $this->db->pdo;
     $query = 'UPDATE posts SET body = :bodyx WHERE id = :idx;';
     $stmt = $pdo->prepare($query);

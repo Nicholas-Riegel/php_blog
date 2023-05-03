@@ -9,7 +9,9 @@ class Users extends Controllers
    * @return void
    */
   public function register(){
-    if (
+    if (strlen($_POST['username']) > 30 || strlen($_POST['password']) > 30){
+      $this->requireWithData('./views/register.php', ['message' => 'Sorry. The username or password is too long.']);
+    } else if (
       isset($_POST['submit_registration'])
       && !empty($_POST['username']) 
       && !empty($_POST['password'])
