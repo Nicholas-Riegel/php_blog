@@ -9,6 +9,7 @@ class Users extends Controllers
    * @return void
    */
   public function register(){
+    // validate length of registration inputs
     if (strlen($_POST['username']) > 30 || strlen($_POST['password']) > 30){
       $this->requireWithData('./views/register.php', ['message' => 'Sorry. The username or password is too long.']);
     } else if (
@@ -37,7 +38,10 @@ class Users extends Controllers
    * @return void
    */
   public function login(){
-    if (
+    // validte length of login inputs
+    if (strlen($_POST['username']) > 30 || strlen($_POST['password']) > 30){
+      $this->requireWithData('./views/login.php', ['message' => 'Sorry. The username or password is too long.']);
+    } else if (
       isset($_POST['submit_login'])
       && !empty($_POST['username'])
       && !empty($_POST['password'])

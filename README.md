@@ -1,17 +1,14 @@
-# PHP BLOG LEARNING / TEACHING TOOL
+# PHP BLOG
 
-This project only has minimal styling at the moment.
+The goal is to make a vanilla PHP application that exemplifies
 
-The goal is to make an learning application that exemplifies
 * Object Oriented PHP
 * Sessions
 * Authentication
-* Validation
+* Front and backend Validation
 * MVC
 * CRUD
 * SQL Database
-
-with as little code as possible.
 
 The SQL queries for making the tables are in the db.sql file
 

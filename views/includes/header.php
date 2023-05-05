@@ -17,7 +17,7 @@
   
 </head>
 
-<body >
+<body>
   
   <nav class="navbar fixed-top">
     
