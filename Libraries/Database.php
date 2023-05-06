@@ -7,17 +7,17 @@ class Database{
   public function __construct()
   {
     // Heroku db credentials
-    $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-    $host     = $url["host"];
-    $username = $url["user"];
-    $password = $url["pass"];
-    $dbname   = substr($url["path"], 1);
+    // $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+    // $host     = $url["host"];
+    // $username = $url["user"];
+    // $password = $url["pass"];
+    // $dbname   = substr($url["path"], 1);
     
     // Development db credentials
-    // $host     = 'localhost';
-    // $username = 'root';
-    // $password = '';
-    // $dbname   = 'sessionsOOP';
+    $host     = 'localhost';
+    $username = 'root';
+    $password = '';
+    $dbname   = 'sessionsOOP';
 
     // DSN
     $dsn      = 'mysql:host='.$host.';dbname='.$dbname ;
