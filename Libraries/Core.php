@@ -25,7 +25,7 @@ class Core
         
       }
     }
-
+    
     // Instantiate controller class
     $active_controller = new $this->controller();
 
