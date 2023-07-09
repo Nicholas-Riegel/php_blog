@@ -7,7 +7,7 @@ class Database{
   public function __construct()
   {
     // Heroku db credentials
-    $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+    $url      = parse_url(getenv("CLEARDB_DATABASE_URL"));
     $host     = $url["host"];
     $username = $url["user"];
     $password = $url["pass"];
@@ -20,7 +20,7 @@ class Database{
     // $dbname   = 'sessionsOOP';
 
     // DSN
-    $dsn      = 'mysql:host='.$host.';dbname='.$dbname ;
+    $dsn = 'mysql:host='.$host.';dbname='.$dbname ;
 
     try {
       $this->pdo = new PDO($dsn, $username, $password);
